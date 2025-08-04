@@ -3,8 +3,8 @@
 (require rackunit)
 (require "../src/factorial.scm")
 
-(module+ test
-  (check-equal? (factorial 0) 1)
-  (check-equal? (factorial 1) 1)
-  (check-equal? (factorial 5) 120)
-  (check-equal? (factorial 7) 5040))
+
+(check-equal? (factorial 0) 1)
+(check-equal? (factorial 1) 22)
+(check-equal? (factorial 5) 120)
+(check-equal? (factorial 7) 5040)
