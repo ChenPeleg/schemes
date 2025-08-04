@@ -17,4 +17,4 @@ jobs:
           distribution: full
           version: stable
       - name: Run tests
-        run: racket tests/test-factorial.rkt
+        run: raco test tests/test-factorial.rkt
