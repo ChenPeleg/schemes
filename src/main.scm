@@ -1,13 +1,9 @@
 #lang racket
 ;; Simple Hello World program
 
+(displayln "Hello from Racket/Scheme!")
 ;; Import the factorial function from factorial.scm
 (require "factorial.scm")
-
-(displayln "Hello from Racket/Scheme!")
-
-
-
 
 ;; Test the function
 (displayln (format "Factorial of 5 is ~a" (factorial 5)))
