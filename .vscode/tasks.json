@@ -4,7 +4,7 @@
         {
             "label": "Run Racket File",
             "type": "shell",
-            "command": "\"C:/Program Files/Racket/Racket.exe\" \"${file}\"",
+            "command": "\"C:/Program Files/Racket/Racket.exe\" ${file}",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -17,11 +17,8 @@
         },
         {
             "label": "Run main.rkt",
-            "type": "process",
-            "command": "C:/Program Files/Racket/Racket.exe",
-            "args": [
-                "${workspaceFolder}/main.rkt"
-            ],
+            "type": "shell",
+            "command": "${workspaceFolder}/run_main.bat",
             "group": "build",
             "presentation": {
                 "reveal": "always",
