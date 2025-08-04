@@ -18,5 +18,4 @@
 (displayln (format "Sum of list: ~a" (apply + my-list)))
 
 ;; Wait for user input before exiting
-(displayln "\nPress Enter to exit...")
-(read-line)
+ 

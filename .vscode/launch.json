@@ -2,29 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Racket",
+            "name": "Run Task Only",
             "type": "node",
             "request": "launch",
-            "program": "${file}",
-            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe"
-        },
-        {
-            "name": "Run main.rkt",
-            "type": "node",
-            "request": "launch",
+            "preLaunchTask": "Run main.rkt",
             "program": "${workspaceFolder}/main.rkt",
-            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe",
-            "console": "integratedTerminal"
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "never match this",
+                "uriFormat": "never match this"
+            },
+            "internalConsoleOptions": "neverOpen",
+            "presentation": {
+                "hidden": false,
+                "group": "",
+                "order": 1
+            }
         },
-        {
-            "name": "Run main.rkt (Clean Output)",
-            "type": "node",
-            "request": "launch",
-            "skipFiles": ["<node_internals>/**"],
-            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe",
-            "program": "${workspaceFolder}/main.rkt",
-            "console": "externalTerminal",
-            "internalConsoleOptions": "neverOpen"
-        }
     ]
 }
