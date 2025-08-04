@@ -1,13 +1,13 @@
 #lang racket
 ;; Simple Hello World program
 
+;; Import the factorial function from factorial.scm
+(require "factorial.scm")
+
 (displayln "Hello from Racket/Scheme!")
 
-;; Define a simple function
-(define (factorial n)
-  (if (<= n 1)
-      1
-      (* n (factorial (- n 1)))))
+
+
 
 ;; Test the function
 (displayln (format "Factorial of 5 is ~a" (factorial 5)))
