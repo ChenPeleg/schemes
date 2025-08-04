@@ -13,7 +13,8 @@
             "type": "node",
             "request": "launch",
             "program": "${workspaceFolder}/main.rkt",
-            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe"
+            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe",
+            "console": "integratedTerminal"
         }
     ]
 }

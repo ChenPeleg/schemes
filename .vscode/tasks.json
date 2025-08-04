@@ -5,10 +5,7 @@
             "label": "Run Racket File",
             "type": "shell",
             "command": "\"C:/Program Files/Racket/Racket.exe\" ${file}",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -18,11 +15,21 @@
         {
             "label": "Run main.rkt",
             "type": "shell",
-            "command": "${workspaceFolder}/run_main.bat",
-            "group": "build",
+            "command": "\"C:/Program Files/Racket/Racket.exe\" \"${workspaceFolder}/main.rkt\"",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "new",
+                "close": false
             },
             "problemMatcher": []
         }

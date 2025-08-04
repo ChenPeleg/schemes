@@ -16,3 +16,7 @@
 (define my-list '(1 2 3 4 5))
 (displayln (format "My list: ~a" my-list))
 (displayln (format "Sum of list: ~a" (apply + my-list)))
+
+;; Wait for user input before exiting
+(displayln "\nPress Enter to exit...")
+(read-line)
