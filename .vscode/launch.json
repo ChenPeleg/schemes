@@ -15,6 +15,16 @@
             "program": "${workspaceFolder}/main.rkt",
             "runtimeExecutable": "C:/Program Files/Racket/Racket.exe",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Run main.rkt (Clean Output)",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe",
+            "program": "${workspaceFolder}/main.rkt",
+            "console": "externalTerminal",
+            "internalConsoleOptions": "neverOpen"
         }
     ]
 }

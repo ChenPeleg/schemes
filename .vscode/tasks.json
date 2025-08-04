@@ -19,8 +19,9 @@
             },
             "presentation": {
                 "reveal": "always",
-                "panel": "new",
-                "close": false
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
             },
             "problemMatcher": []
         }
