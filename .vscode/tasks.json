@@ -4,11 +4,25 @@
         {
             "label": "Run Racket File",
             "type": "shell",
-            "command": "\"C:\\Program Files\\Racket\\Racket.exe\" \"${file}\"",
+            "command": "\"C:/Program Files/Racket/Racket.exe\" \"${file}\"",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run main.rkt",
+            "type": "process",
+            "command": "C:/Program Files/Racket/Racket.exe",
+            "args": [
+                "${workspaceFolder}/main.rkt"
+            ],
+            "group": "build",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"

@@ -6,7 +6,14 @@
             "type": "node",
             "request": "launch",
             "program": "${file}",
-            "runtimeExecutable": "C:\\Program Files\\Racket\\Racket.exe"
+            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe"
+        },
+        {
+            "name": "Run main.rkt",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.rkt",
+            "runtimeExecutable": "C:/Program Files/Racket/Racket.exe"
         }
     ]
 }
